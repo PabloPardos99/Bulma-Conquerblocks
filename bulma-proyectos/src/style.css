@@ -1,0 +1,60 @@
+@import 'bulma/css/bulma.css';
+
+:root {
+  --primary: #86e16f;
+  --secondary: #e7a678;
+  --accent: #7180F4;
+  --background: #F0F7FF;
+  --background2: #d6e5f5;
+  --foreground: #c4dae9;
+  --footer: #feffff;
+  --radius: 1rem;
+  --text: #000;
+}
+
+body {
+  /* background-color: var(--background); */
+  /* Importante: Si nosotros utilizamos el theme-dark,
+  el color del texto no podrá ser en color negro u oscuros,
+  ya que HTML interpreta que al ser del mismo color que el theme, 
+  no podrá ser leido */
+  color: var(--text);
+}
+
+.hero {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+}
+
+.navbar-burguer,
+.navbar-burguer:active{
+  color: var(--text);
+}
+
+.about-section {
+  background-color: var(--background);
+}
+
+.projects-section {
+  background-color: var(--background2);
+}
+
+.skill-section {
+  background-color: var(--background);
+}
+
+/* Movimiento de las tarjetas de proyectos */
+.feature-card,
+.project-card,
+.skill-card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature-card:hover,
+.project-card:hover,
+.skill-card:hover {
+  transform: translateY(-10px);
+}
+
+.footer {
+  background-color: var(--footer);
+}
